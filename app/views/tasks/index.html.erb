@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tasks</h1>
+
+<div id="tasks">
+  <%= render @tasks %>
+</div>
+
+
+<br>
+
+<h2>New Task</h2>
+<%= render 'form', task: @task %>
+
+<%= link_to 'New Task', new_task_path %>
